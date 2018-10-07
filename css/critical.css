@@ -203,6 +203,7 @@ body {
 	position: relative;
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-size-adjust: 100%;
+	background-color: #f7f7f7;
 }
 
 img {
@@ -335,6 +336,7 @@ button {
 
 a {
 	cursor: pointer;
+	color: #555;
 }
 
 ._no-border,
@@ -412,10 +414,6 @@ a {
 }
 
 @media (max-width: 992px) {
-
-body {
-	width: 992px;
-}
 
 .-hidden-sm {
 	display: none;

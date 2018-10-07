@@ -7,12 +7,18 @@
 .b-main
 	margin 0 -25px
 	font-size 0
+	@media $max_xs
+		margin 0
+		padding 10px
 	&__sidebar,
 	&__content
 		font-size 16px
 		display inline-block
 		vertical-align top
 		padding 0 25px
+		@media $max_xs
+			padding 0
+			width 100%
 	&__sidebar
 		width 300px
 	&__item
@@ -41,3 +47,44 @@
 	text-align center
 	display block
 	font-size 13px
+
+.b-contacts
+	&__item
+		padding 10px 0
+		border-bottom 1px solid #555
+		display table
+		table-layout fixed
+		width 100%
+	&__icon,
+	&__text
+		display table-cell
+		vertical-align middle
+	&__icon
+		width 50px
+		border-right 1px solid #555
+		padding 0 15px
+	&__text
+		text-align right
+
+.b-date-list
+	&__item
+		margin-left 80px
+		border-left 1px solid #555
+		padding 0 0 15px 15px
+		position relative
+		&:before
+			content ''
+			display block
+			background-color #555555
+			padding 4px
+			position absolute
+			top 0
+			left -4	px
+			border-radius 50%
+	&__date
+		position absolute
+		top 0
+		right 100%
+		width 40px
+		text-align center
+		margin-right 20px
