@@ -1,0 +1,7 @@
+build
+node_modules
+bower_components
+PSD
+.DS_Store
+Desktop.ini
+Thumbs.db

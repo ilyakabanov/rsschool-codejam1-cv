@@ -1,0 +1,17 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html(lang="ru")
+	head
+		title Ilya Kabanov CV
+		include inc/head
+	body
+		include partials/header
+
+		.b-common-wrap
+			h1 test
+
