@@ -330,6 +330,10 @@ strong {
 	font-weight: 600;
 }
 
+p {
+	line-height: 22px;
+}
+
 button {
 	border: 0;
 }

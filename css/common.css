@@ -60,8 +60,8 @@
 .b-position {
 	text-align: center;
 	display: block;
-	font-size: 13px;
-	font-size: 0.8125rem;
+	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .b-contacts__item {
@@ -117,6 +117,13 @@
 	width: 40px;
 	text-align: center;
 	margin-right: 20px;
+}
+
+.b-date-list__position {
+	display: block;
+	margin-bottom: 15px;
+	margin-bottom: 0.9375rem;
+	font-style: italic;
 }
 
 @media (max-width: 768px) {
