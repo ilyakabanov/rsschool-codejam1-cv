@@ -12,6 +12,121 @@ html(lang="ru")
 	body
 		include partials/header
 
-		.b-common-wrap
-			h1 test
+		+b('').main
+			+e('').item._name
+				+b('h1').title Ilya Kabanov
+				+b('span').position Web Developer
+			+e('').item._img
+				+e('img')(src="img/icon.jpg", width="333" height="333").img
+			+e('').item._contacts
+				+b('h3').heading Contacts
+				+b('').contacts
+					+e('').item
+						+e('').icon
+						+e('').text
+							Nezavisimosti 29, Minsk
+					+e('').item
+						+e('').icon
+						+e('').text
+							a(href="mailto:ilyamainbox@gmail.com") ilyamainbox@gmail.com
+					+e('').item
+						+e('').icon
+						+e('').text
+							a(href="tel:+375257157766") +375257157766
+					+e('').item
+						+e('').icon
+						+e('').text
+							span @usernameilya
+			+e('').item._skills
+				+b('h3').heading Skills
+				+b('').skills
+					+e('').item HTML5
+					+e('').item CSS3
+					+e('').item jQuery
+					+e('').item PHP
+					+e('').item MySQL
+					+e('').item Drupal 7 API
+					+e('').item Ajax
+					+e('').item Gulp
+					+e('').item Jade
+					+e('').item Stylus
+					+e('').item Git
+			+e('').item._summary
+				+b('h3').heading Summary
+				+b('').text
+					p I want to work in perspective company, get new experience, progress and communication.
+					p Learn modern tendencies in web development.
+					p Take part in interesting projects, give my experience and knowledge for dest task performance.
+					p Work with enthusiastic people and be inspired by reached success.
+			+e('').item._code
+				+b('h3').heading Code examples
+				+e('a')(href="https://github.com/ilyakabanov").link https://github.com/ilyakabanov
+			+e('').item._experience
+				+b('h3').heading Experience
+				+b('').date-list
+					+e('').item
+						+e('h4').title IP Goncharik
+						+e('span').position Web Developer
+						+e('span').date 2015 - Now
+						+e('').text
+							p The introduction of new and refinement of the existing functionality
+							p Technical support
+							p Layout HTML / CSS based on layouts created by designer
+							p Layout letters
+
+							p Some projects:
+							ul
+								li
+									a(traget="_blank", href="https://www.creagames.com") https://www.creagames.com
+								li
+									a(traget="_blank", href="http://gunbarbershop.by") http://gunbarbershop.by
+								li
+									a(traget="_blank", href="https://evakyator.by") https://evakyator.by
+								li
+									a(traget="_blank", href="https://gruzevak.by") https://gruzevak.by
+								li
+									a(traget="_blank", href="https://vekev.by") https://vekev.by
+					+e('').item
+						+e('h4').title ib.by
+						+e('span').position Web Developer
+						+e('span').date 2014 - 2015
+						+e('').text
+							p Website development
+							p The introduction of new and refinement of the existing functionality
+							p Technical support
+
+							p Some projects:
+							ul
+								li
+									a(traget="_blank", href="http://asvet.by") http://asvet.by
+								li
+									a(traget="_blank", href="http://pandalift.ru") http://pandalift.ru
+								li
+									a(traget="_blank", href="http://interlamp.by") http://interlamp.by
+								li
+									a(traget="_blank", href="http://moyrodnoy.by") http://moyrodnoy.by
+								li
+									a(traget="_blank", href="http://redprice.by") http://redprice.by
+					+e('').item
+						+e('h4').title Freelancer
+						+e('span').position Web Developer
+						+e('span').date 2013 - 2014
+						+e('').text
+							p Layout HTML / CSS based on layouts created by designer
+							p Technical support
+							p Update and support existing projects
+
+			+e('').item._education
+				+b('h3').heading Education
+					+b('').date-list
+					+e('').item
+						+e('h4').title Minsk State Vocational and Technical College of Sewing Production
+						+e('span').position Tailor
+						+e('span').date 2007 - 2008
+						+e('').text
+			+e('').item._english
+				+b('').text
+					p School practice, surfing english web pages, self research.
+
+
 
