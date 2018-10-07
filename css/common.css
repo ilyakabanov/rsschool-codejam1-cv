@@ -7,17 +7,16 @@
 }
 
 .b-main {
-	margin: 0 -25px;
-	margin: 0rem -1.5625rem;
-	font-size: 0px;
-	font-size: 0rem;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
 }
 
 .b-main__sidebar,
 .b-main__content {
+	display: table-cell;
 	font-size: 16px;
 	font-size: 1rem;
-	display: inline-block;
 	vertical-align: top;
 	padding: 0 25px;
 	padding: 0rem 1.5625rem;
@@ -126,6 +125,11 @@
 	font-style: italic;
 }
 
+.b-skills__item {
+	margin: 8px 0;
+	margin: 0.5rem 0rem;
+}
+
 @media (max-width: 768px) {
 
 .b-main {
@@ -140,6 +144,7 @@
 	padding: 0;
 	padding: 0rem;
 	width: 100%;
+	display: block;
 }
 
 }

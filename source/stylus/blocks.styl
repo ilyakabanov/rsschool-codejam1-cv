@@ -5,20 +5,22 @@
 	position relative
 
 .b-main
-	margin 0 -25px
-	font-size 0
+	display table
+	table-layout fixed
+	width 100%
 	@media $max_xs
 		margin 0
 		padding 10px
 	&__sidebar,
 	&__content
+		display table-cell
 		font-size 16px
-		display inline-block
 		vertical-align top
 		padding 0 25px
 		@media $max_xs
 			padding 0
 			width 100%
+			display block
 	&__sidebar
 		width 300px
 	&__item
@@ -92,3 +94,7 @@
 		display block
 		margin-bottom 15px
 		font-style italic
+
+.b-skills
+	&__item
+		margin 8px 0
